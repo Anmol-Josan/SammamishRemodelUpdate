@@ -10,6 +10,9 @@
 
 <body>
     <img src="Images/Background.png" class="bg-img">
+    <div style="width: 100%; text-align: center;">
+        <h1 class="header">Header Goes Here</h1><!--Will be moved down-->
+    </div>
     <ul>
         <li><a class="active logo" href="#">Home</a></li>
         <li><a href="#">Gallery</a></li>
@@ -26,17 +29,30 @@
         margin: 0;
     }
 
-    .bg-img{
-        width:100%;
-        margin:0;
-        z-index:5;
-        top:0;
-        
+    .bg-img {
+        width: 100%;
+        margin: 0;
+        position:absolute;
+        z-index: 1;
+        top: 0;
+    }
+
+    .header{
+        margin: auto auto;
+        align-self: center;
+        z-index: 2;
+        font-size: 50px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        position: relative;
     }
 
     ul {
         list-style-type: none;
         margin: 0;
+        margin-top: 36.5%;
         width: auto;
         left: 0;
         padding: 0;
