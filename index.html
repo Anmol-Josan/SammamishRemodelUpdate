@@ -11,7 +11,7 @@
 <body>
     <img src="Images/Background.png" class="bg-img">
     <div style="width: 100%; text-align: center;">
-        <h1 class="header">Header Goes Here</h1><!--Will be moved down-->
+        <h1 class="header"><div id="bgWhite">Header Goes Here</div></h1>
     </div>
     <ul>
         <li><a class="active logo" href="#">Home</a></li>
@@ -29,6 +29,18 @@
         margin: 0;
     }
 
+    #bgWhite{
+        margin:auto auto;
+        padding: 5px 10px;
+        float:center;
+        width:fit-content;
+        background-color: white;
+    }
+
+    img {
+        filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(180deg);
+    }
+
     .bg-img {
         width: 100%;
         margin: 0;
@@ -38,7 +50,10 @@
     }
 
     .header{
-        margin: auto auto;
+        float:center;
+        align-items: center;
+        margin: auto;
+        padding-top: 20%;
         align-self: center;
         z-index: 2;
         font-size: 50px;
@@ -50,9 +65,10 @@
     }
 
     ul {
+        align-items: center;
         list-style-type: none;
         margin: 0;
-        margin-top: 36.5%;
+        margin-top: 203px;
         width: auto;
         left: 0;
         padding: 0;
@@ -63,10 +79,12 @@
     }
 
     li {
+        align-self: center;
         float: left;
     }
 
     li a {
+        align-items: center;
         display: block;
         color: white;
         text-align: center;
