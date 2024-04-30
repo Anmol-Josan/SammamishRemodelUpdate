@@ -10,6 +10,9 @@
 
 <body>
     <img src="Images/Background.png" class="bg-img">
+    <div style="width: 100%; text-align: center;">
+        <h1 class="header"><div id="bgWhite">Header Goes Here</div></h1>
+    </div>
     <ul>
         <li><a class="active logo" href="#">Home</a></li>
         <li><a href="#">Gallery</a></li>
@@ -26,17 +29,46 @@
         margin: 0;
     }
 
-    .bg-img{
-        width:100%;
-        margin:0;
-        z-index:5;
-        top:0;
-        
+    #bgWhite{
+        margin:auto auto;
+        padding: 5px 10px;
+        float:center;
+        width:fit-content;
+        background-color: white;
+    }
+
+    img {
+        filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(180deg);
+    }
+
+    .bg-img {
+        width: 100%;
+        margin: 0;
+        position:absolute;
+        z-index: 1;
+        top: 0;
+    }
+
+    .header{
+        float:center;
+        align-items: center;
+        margin: auto;
+        padding-top: 20%;
+        align-self: center;
+        z-index: 2;
+        font-size: 50px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        position: relative;
     }
 
     ul {
+        align-items: center;
         list-style-type: none;
         margin: 0;
+        margin-top: 203px;
         width: auto;
         left: 0;
         padding: 0;
@@ -47,10 +79,12 @@
     }
 
     li {
+        align-self: center;
         float: left;
     }
 
     li a {
+        align-items: center;
         display: block;
         color: white;
         text-align: center;
