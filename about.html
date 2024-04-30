@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="#about">About</a>
+            <a href="team.html">Meet the Team</a>
+            <a href="constructionCosts.html">New Construction Costs</a>
+            <a href="contact.html">Contact</a>
+            <li></li>
+        </div>
+    </header>
+    <div style="position: absolute; z-index: 1;">
+        <div style="display: flex;">
+            <div class="container-left" style="width: 40%; margin: 40px;">
+                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Our experience</p>
+                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Over the past 14 years our collective team of excellent hourly employees, exceptional subcontractors, architects, and engineers have proudly completed hundreds of successful residential remodel and custom build projects.</p>
+                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Who do we work for?</p>
+                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> We work for a long list of amazing people, including many executives and professionals in tech and other industries, many of our friends and neighbors, and many repeat clients.</p>
+                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> We typically work by referral only. This simply means most of the projects we engage come through personal relationships and through existing and past clients referring us to their friends, family, and colleagues.</p>
+                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> If you are not referred to us by someone who has worked with us, we kindly ask that you contact at least one of our past clients to discuss their remodeling experience. We are happy to provide you with some referrals!</p>
+            </div>
+            <div class="container-right" style="margin: 40px; text-align: right;">
+                <img src="images/Chandelier.png" alt="Chandelier">
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="container2-left" style="width: 40%; margin: 40px;"> 
+                <img src="images/house_about.jpg" alt="House for about page">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<style>
+
+.topnav {
+    z-index: 2;
+    background-color: rgb(12, 8, 11);
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    background-color: rgb(12, 8, 11);
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+
+  .topnav a.active {
+  background-color: rgb(159, 190, 129);
+  color: white;
+}
+</style>
