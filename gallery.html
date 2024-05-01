@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,96 +14,110 @@
     <link rel="stylesheet" href="CSS/style.css">
 
     <style>
-    body {
-        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    }
-    .nav {
-        background-color: black;
-        margin: auto;
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        width: auto;
-        left: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: rgb(12, 8, 11);
-        position: sticky;
-        top: 0;
-        text-align: center;
-    }
+        body {
+            font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
 
-    li {
-        float: left;
-    }
+        .nav {
+            background-color: black;
+            margin: auto;
+        }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 23px 16px;
-        text-decoration: none;
-    }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            width: auto;
+            left: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(12, 8, 11);
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
 
-    li a:hover {
-        background-color: rgb(154, 154, 154);
-    }
+        li {
+            float: left;
+        }
 
-    .container {
-        padding: 30px;
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-    }
-    .footer {
-        background: darkgray;
-        color: white;
-        padding: 10px;
-        margin-top: 10px;
-        clear: both;
-    }
+        li a:hover {
+            background-color: rgb(154, 154, 154);
+        }
 
+        .container {
+            padding: 30px;
+
+        }
+
+        .footer {
+            background: darkgray;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            clear: both;
+        }
+
+        .logo {
+            background-image: url(Images/logo.png);
+            background-size: 100%;
+        }
     </style>
 </head>
+
 <body>
     <div class="nav">
         <ul>
-            <li><img src="Images/logo.png" alt="Sammamish Remodel Logo" style="width: 20%; display: block; float: left;"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active logo" href="gallery.html">Gallery</a></li>
+            <li style="width:250px;"><a class="logo" href="index.html" style="height:52px"></a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="team.html">Our Team</a></li>
             <li><a href="constructionCosts.html">Construction Costs</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>    
+        </ul>
     </div>
     <div class="container">
-        <div id="gallery" class="carousel slide row carousel-dark" data-bs-ride="carousel" style="border: 0px">   
+        <div id="gallery" class="carousel slide row carousel-dark" data-bs-ride="carousel" style="border: 0px">
             <div class="col-md-12">
                 <h1 style="text-align: center;">Transformations: Homes Reimagined</h1>
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="Images/transformations/1.png" alt="Transformation 1" class="d-block m-auto" style="height: 600px; padding: 20px;" >
+                        <img src="Images/transformations/1.png" alt="Transformation 1" class="d-block m-auto"
+                            style="height: 600px; padding: 20px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/transformations/2.png" alt="Transformation 2" class="d-block m-auto" style="height: 600px; padding: 20px;">
+                        <img src="images/transformations/2.png" alt="Transformation 2" class="d-block m-auto"
+                            style="height: 600px; padding: 20px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/transformations/3.png" alt="Transformation 3" class="d-block m-auto" style="height: 600px; padding: 20px;">
+                        <img src="images/transformations/3.png" alt="Transformation 3" class="d-block m-auto"
+                            style="height: 600px; padding: 20px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/transformations/4.png" alt="Transformation 4" class="d-block m-auto" style="height: 600px; padding: 20px;">
+                        <img src="images/transformations/4.png" alt="Transformation 4" class="d-block m-auto"
+                            style="height: 600px; padding: 20px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/transformations/5.png" alt="Transformation 5" class="d-block m-auto" style="height: 600px; padding: 20px;">
+                        <img src="images/transformations/5.png" alt="Transformation 5" class="d-block m-auto"
+                            style="height: 600px; padding: 20px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/transformations/6.png" alt="Transformation 6" class="d-block m-auto" style="height: 600px; padding: 20px;">
+                        <img src="images/transformations/6.png" alt="Transformation 6" class="d-block m-auto"
+                            style="height: 600px; padding: 20px;">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/transformations/7.png" alt="Transformation 7" class="d-block m-auto" style="height: 600px; padding: 20px;">
+                        <img src="images/transformations/7.png" alt="Transformation 7" class="d-block m-auto"
+                            style="height: 600px; padding: 20px;">
                     </div>
-                        <!-- Left and right controls/icons -->
+                    <!-- Left and right controls/icons -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
@@ -124,100 +139,112 @@
                 </div>
             </div>
         </div>
-            <div id="gallery2" class="carousel slide row  carousel-dark" data-bs-ride="carousel" style="border: 0px; margin-top: 50px;">   
-                <div class="col-sm-6">
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/kitchens/1.png" alt="Kitchen 1" class="d-block m-auto" style="height: 600px; padding: 50px;" >
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/kitchens/2.png" alt="Kitchen 2" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/kitchens/3.png" alt="Kitchen 3" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/kitchens/4.png" alt="Kitchen 4" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/kitchens/5.png" alt="Kitchen 5" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>
-                            <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#gallery2" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#gallery2" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#gallery2" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#gallery2" data-bs-slide-to="3"></button>
-                            <button type="button" data-bs-target="#gallery2" data-bs-slide-to="4"></button>
-                        </div>
-                            <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#gallery2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#gallery2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-    
+        <div id="gallery2" class="carousel slide row  carousel-dark" data-bs-ride="carousel"
+            style="border: 0px; margin-top: 50px;">
+            <div class="col-sm-6">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/kitchens/1.png" alt="Kitchen 1" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
                     </div>
-                
-                </div>
-                <div class="col-sm-6 p-5" style="text-align: right;">
-                    <h1>Kitchens</h1>
-                    <p>
-                        Explore our sleek, modern kitchen remodels – the perfect blend of style and practicality.</p>
-                </div>
-    
-            </div>
-    
-            <br>
-            
-            <div id="gallery3" class="carousel slide row  carousel-dark" data-bs-ride="carousel" style="border: 0px; margin-top: 50px;">   
-                <div class="col-sm-6 p-5" style="text-align: left;">
-                    <h1>Bathrooms</h1>
-                    <p>Discover our bathroom makeovers. Your private retreat, revamped for relaxation.</p>
-                </div>
-    
-                <div class="col-sm-6">
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/bathrooms/1.png" alt="Bathroom 1" class="d-block m-auto" style="height: 600px; padding: 50px;" >
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/bathrooms/2.png" alt="Bathroom 2" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/bathrooms/3.png" alt="Bathroom 3" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>                        
-                        <div class="carousel-item">
-                            <img src="images/bathrooms/4.png" alt="Bathroom 4" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/bathrooms/5.png" alt="Bathroom 5" class="d-block m-auto" style="height: 600px; padding: 50px;">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="images/kitchens/2.png" alt="Kitchen 2" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kitchens/3.png" alt="Kitchen 3" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kitchens/4.png" alt="Kitchen 4" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kitchens/5.png" alt="Kitchen 5" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#gallery2" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#gallery2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#gallery2" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#gallery2" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#gallery2" data-bs-slide-to="4"></button>
+                    </div>
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gallery2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gallery2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
 
-                            <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#gallery3" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#gallery3" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#gallery3" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#gallery3" data-bs-slide-to="3"></button>
-                            <button type="button" data-bs-target="#gallery3" data-bs-slide-to="4"></button>
-                        </div>
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#gallery3" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#gallery3" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-    
-                    </div>
-                
                 </div>
-            </div>  
-    </div>  
+
+            </div>
+            <div class="col-sm-6 p-5" style="text-align: right;">
+                <h1>Kitchens</h1>
+                <p>
+                    Explore our sleek, modern kitchen remodels – the perfect blend of style and practicality.</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <div id="gallery3" class="carousel slide row  carousel-dark" data-bs-ride="carousel"
+            style="border: 0px; margin-top: 50px;">
+            <div class="col-sm-6 p-5" style="text-align: left;">
+                <h1>Bathrooms</h1>
+                <p>Discover our bathroom makeovers. Your private retreat, revamped for relaxation.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/bathrooms/1.png" alt="Bathroom 1" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bathrooms/2.png" alt="Bathroom 2" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bathrooms/3.png" alt="Bathroom 3" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bathrooms/4.png" alt="Bathroom 4" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/bathrooms/5.png" alt="Bathroom 5" class="d-block m-auto"
+                            style="height: 600px; padding: 50px;">
+                    </div>
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#gallery3" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#gallery3" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#gallery3" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#gallery3" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#gallery3" data-bs-slide-to="4"></button>
+                    </div>
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gallery3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gallery3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer">
             Group 2 &copy; 2024
@@ -225,4 +252,5 @@
     </footer>
 
 </body>
+
 </html>
