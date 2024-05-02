@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Contact</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,9 +16,13 @@
     <style>
         body {
             font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            background: rgb(164, 180, 148);
         }
 
         .nav {
+            width: 100%;
+            z-index: 2;
+            position: fixed;
             background-color: black;
             margin: auto;
         }
@@ -54,7 +58,17 @@
 
         .container {
             padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+        }
 
+        .container p {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .container p:hover {
+            background-color: rgba(12, 8, 11, 0.1);
         }
 
         .footer {
@@ -82,6 +96,23 @@
             <li><a href="constructionCosts.html">Construction Costs</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+    </div>
+    <div class="container">
+        <h2 style="margin-top:50px;">Contact Information</h2>
+        <p><strong>Office:</strong> (425) 269-5578</p>
+        <p><strong>Sales:</strong> Mark Kovats - <a href="mailto:mkovats@sammamishrcb.com">mkovats@sammamishrcb.com</a>
+        </p>
+        <p><strong>Office / Admin:</strong> Gracia Macy - <a
+                href="mailto:Gracia@sammamishrcb.com">Gracia@sammamishrcb.com</a></p>
+        <p><strong>Project Engineer:</strong> Diana Bean - <a
+                href="mailto:Diana@sammamishrcb.com">Diana@sammamishrcb.com</a></p>
+        <p><strong>Site Supervisor:</strong> Andres Escobar - <a
+                href="mailto:Andres@sammamishrcb.com">Andres@sammamishrcb.com</a></p>
+        <p><strong>Accounting:</strong> Darin Edwards - <a
+                href="mailto:Darin@sammamishrcb.com">Darin@sammamishrcb.com</a></p>
+        <p><strong>Owner:</strong> Mike Flaker - <a href="mailto:mike@sammamishrcb.com">mike@sammamishrcb.com</a></p>
+        <p><strong>Address:</strong> 2028 E Lake Sammamish Pkwy NE, Sammamish, WA 98074</p>
+        <p>(Home office visits by appointment only)</p>
     </div>
 </body>
 
