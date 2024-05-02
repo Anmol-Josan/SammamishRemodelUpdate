@@ -11,7 +11,14 @@
 </head>
 
 <body>
-    <img src="Images/Background.png" style="width: 100%;">
+    <div class="image-container">
+        <img src="Images/Background.png" style="width: 100%;">
+        <div class="overlay">
+            <h1>Join Us Today!</h1>
+            <button onclick="location.href='constructionCosts.html'">Get A Quote!</button>
+        </div>
+    </div>
+
     <ul>
         <li style="width:250px;"><a class="active logo" href="index.html" style="height:52px"></a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -21,8 +28,8 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div
-        style="padding-top:70px;background-color:#efefef; font-weight: 600; height: 500px; font-size: 500px; align-items:center; z-index: 1; position:relative;">
-        <h2 style="margin-top: 7%; position: relative; z-index: 1;">OUR SERVICES</h2>
+        style="padding-top:1px;background-color:#efefef; font-weight: 600; height: 300px; font-size: 500px; align-items:center; z-index: 1; position:relative;">
+        <h2 style="margin-top: 5%; position: relative; z-index: 1;">OUR SERVICES</h2>
         <hr style="width:50%; background-color:rgb(141, 198, 63); height:2px; margin: 0 auto 20px;">
     </div>
     <div class="service" id="kitchen">
@@ -61,7 +68,7 @@
         box-sizing: border-box;
     }
 
-    h2{
+    h2 {
         margin-bottom: 20px;
     }
 
@@ -110,6 +117,33 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    .overlay h1 {
+        font-size: 4em;
+    }
+
+    .overlay button {
+        background-color: rgb(255, 97, 97);
+        border: none;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
         margin: 10px 2px;
         cursor: pointer;
         border-radius: 5px;
