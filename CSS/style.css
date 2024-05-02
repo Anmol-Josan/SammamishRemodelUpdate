@@ -1,5 +1,9 @@
-.text {
+.text{
     color: rgb(12, 8, 11);
+}
+
+body {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .background {
@@ -37,6 +41,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition-duration: 0.3s;
 }
 
 li a:hover {
