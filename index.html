@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -9,98 +11,56 @@
 </head>
 
 <body>
-    <div class="container">
-        <img src="Images/Background.png" class="bg-img">
-        <div class="centered">
-            <h1>
-                <div id="bgWhite">Sammamish Remodel</div>
-            </h1>
+    <div class="image-container">
+        <img src="Images/Background.png" style="width: 100%;">
+        <div class="overlay">
+            <h1>Join Us Today!</h1>
+            <button onclick="location.href='constructionCosts.html'">Get A Quote!</button>
         </div>
     </div>
+
     <ul>
-        <li><a class="active logo" href="#">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Construction Costs</a></li>
-        <li><a href="#">Contact</a></li>
+        <li style="width:250px;"><a class="active logo" href="index.html" style="height:52px"></a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="constructionCosts.html">Construction Costs</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
-    <p>Homes & Additions • Kitchens & Baths • Home Makeovers</p>
-    <div class="row">
-        <div class="column">
-            <img src="Images/Background.png" style="width:100%" onclick="openModal();currentSlide(1)"
-                class="hover-shadow cursor">
-        </div>
-        <div class="column">
-            <img src="Images/Background.png" style="width:100%" onclick="openModal();currentSlide(2)"
-                class="hover-shadow cursor">
-        </div>
-        <div class="column">
-            <img src="Images/Background.png" style="width:100%" onclick="openModal();currentSlide(3)"
-                class="hover-shadow cursor">
-        </div>
-        <div class="column">
-            <img src="Images/Background.png" style="width:100%" onclick="openModal();currentSlide(4)"
-                class="hover-shadow cursor">
-        </div>
+    <div
+        style="padding-top:1px;background-color:#efefef; font-weight: 600; height: 300px; font-size: 500px; align-items:center; z-index: 1; position:relative;">
+        <h2 style="margin-top: 5%; position: relative; z-index: 1;">OUR SERVICES</h2>
+        <hr style="width:50%; background-color:rgb(141, 198, 63); height:2px; margin: 0 auto 20px;">
+    </div>
+    <div class="service" id="kitchen">
+        <h2>Homes & Additions</h2>
+        <img src="Images/home1st.jpg" alt="Kitchen Remodeling">
+        <p>Over the years our team has enjoyed helping many of our clients draft, permit, and build their dream homes,
+            additions and living spaces. Let's see what we can do for you.</p>
+        <button onclick="moreInfo('kitchen')">More Info</button>
     </div>
 
-    <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-            <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="Images/Background.png" class=".img" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="Images/Background.png" class=".img" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="Images/Background.png" class=".img" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="Images/Background.png" class=".img" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
-
-            <div class="column">
-                <img class=".img thumbnail cursor" src="Images/Background.png" style="width:100%"
-                    onclick="currentSlide(1)">
-            </div>
-            <div class="column">
-                <img class=".img thumbnail cursor" src="Images/Background.png" style="width:100%"
-                    onclick="currentSlide(2)">
-            </div>
-            <div class="column">
-                <img class=".img thumbnail cursor" src="Images/Background.png" style="width:100%"
-                    onclick="currentSlide(3)">
-            </div>
-            <div class="column">
-                <img class=".img thumbnail cursor" src="Images/Background.png" style="width:100%"
-                    onclick="currentSlide(4)">
-            </div>
-        </div>
+    <div class="service" id="bathroom">
+        <h2>Kitchens & Baths</h2>
+        <img src="Images/home2nd.jpg" alt="Bathroom Remodeling">
+        <p>Kitchens and baths are typically a home owner's largest home investment. We have helped hundreds of clients
+            realize their dream kitchens and bathrooms.</p>
+        <button onclick="moreInfo('bathroom')">More Info</button>
     </div>
-    <footer style="margin-top:1000px;">
-        <div class="footer">
-            Group 2 &copy; 2024
-        </div>
-    </footer>
+
+    <div class="service" id="construction">
+        <h2>Home Makeovers</h2>
+        <img src="Images/home3rd.jpg" alt="New Construction">
+        <p>Creating a fresh new look can be as easy as new doors and trim, carpet, or a fresh coat of paint. Let us help
+            you get the most out of your budget.</p>
+        <button onclick="moreInfo('construction')">More Info</button>
+    </div>
 </body>
+<script>
+    function moreInfo(service) {
+        alert("More information about " + service);
+    }
+</script>
 
 </html>
 <style>
@@ -108,17 +68,85 @@
         box-sizing: border-box;
     }
 
-    .footer {
-        background: darkgray;
-        color: white;
-        padding: 10px;
-        margin-top: 10px;
-        clear: both;
+    h2 {
+        margin-bottom: 20px;
     }
 
-    footer {
-        width: 100%;
-        margin: auto;
+    .service {
+        border: 1px solid #ccc;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        transition: box-shadow 0.3s ease;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service img {
+        width: 50%;
+        object-fit: contain;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .service:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transform: scale(1.02);
+    }
+
+    .service h2 {
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .service p {
+        font-size: 125%;
+        width: 50%;
+    }
+
+    .service button {
+        background-color: rgb(159, 190, 129);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    .overlay h1 {
+        font-size: 4em;
+    }
+
+    .overlay button {
+        background-color: rgb(255, 97, 97);
+        border: none;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 5px;
     }
 
     body {
@@ -131,42 +159,13 @@
     }
 
     p {
+        margin-top: 40px;
         font-weight: bold;
         font-size: 30px;
     }
 
-    .container {
-        font-weight: 600;
-        position: relative;
-        text-align: center;
-        color: rgb(0, 0, 0);
-    }
-
-    .centered {
-        font-size: 30px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #bgWhite {
-        background-color: white;
-        margin: auto auto;
-        padding: 5px 10px;
-        float: center;
-        width: 103%;
-    }
-
-    img {
-        filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(180deg);
-    }
-
-    .bg-img {
-        width: 100%;
-    }
-
     ul {
+        z-index: 5;
         align-items: center;
         list-style-type: none;
         margin: 0;
@@ -189,7 +188,7 @@
         display: block;
         color: white;
         text-align: center;
-        padding: 23px 16px;
+        padding: 17px 16px;
         text-decoration: none;
     }
 
@@ -197,171 +196,8 @@
         background-color: rgb(154, 154, 154);
     }
 
-    .row>.column {
-        padding: 0 8px;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .column {
-        float: left;
-        width: 25%;
-    }
-
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: black;
-    }
-
-    .modal-content {
-        position: relative;
-        background-color: #fefefe;
-        margin: auto;
-        padding: 0;
-        width: 90%;
-        max-width: 1200px;
-    }
-
-    .close {
-        color: white;
-        position: absolute;
-        top: 10px;
-        right: 25px;
-        font-size: 35px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #999;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .mySlides {
-        display: none;
-    }
-
-    .cursor {
-        cursor: pointer;
-    }
-
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .prev {
-        float: left;
-        left: 0;
-        right: 100%;
-        padding-right: 25px;
-    }
-
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    .img {
-        margin-bottom: -4px;
-    }
-
-    .caption-container {
-        text-align: center;
-        background-color: black;
-        padding: 2px 16px;
-        color: white;
-    }
-
-    .thumbnail {
-        opacity: 0.6;
-    }
-
-    .active,
-    .thumbnail:hover {
-        opacity: 1;
-    }
-
-    img.hover-shadow {
-        transition: 0.3s;
-    }
-
-    .hover-shadow:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .logo {
+        background-image: url(Images/logo.png);
+        background-size: 100%;
     }
 </style>
-<script>
-    function openModal() {
-        document.getElementById("myModal").style.display = "block";
-    }
-
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("thumbnail");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-</script>
