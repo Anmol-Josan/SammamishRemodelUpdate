@@ -18,7 +18,52 @@
             font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
         }
 
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 18px;
+            }
+
+            .nav ul li {
+                float: none;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+        
+        @media only screen and (min-width: 600px) and (max-width: 1200px) {
+            body {
+                font-size: 20px;
+            }
+
+            .nav ul li {
+                float: left;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            body {
+                font-size: 22px;
+            }
+
+            .nav ul li {
+                float: left;
+            }
+
+            .container {
+                padding: 30px;
+            }
+        }
+
         .nav {
+            width: 100%;
+            z-index: 2;
+            position: fixed;
             background-color: black;
             margin: auto;
         }
@@ -54,7 +99,6 @@
 
         .container {
             padding: 30px;
-
         }
 
         .logo {
@@ -78,7 +122,7 @@
     <div class="container">
         <div id="gallery" class="carousel slide row carousel-dark" data-bs-ride="carousel" style="border: 0px">
             <div class="col-md-12">
-                <h1 style="text-align: center;">Transformations: Homes Reimagined</h1>
+                <h1 style="text-align: center; margin-top: 40px;">Transformations: Homes Reimagined</h1>
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">

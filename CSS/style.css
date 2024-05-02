@@ -1,13 +1,19 @@
-.text{
+.text {
     color: rgb(12, 8, 11);
 }
-.background{
+
+.background {
     color: rgb(239, 245, 255);
 }
+
 .nav {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
     background-color: black;
     margin: auto;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -37,15 +43,18 @@ li a:hover {
     background-color: rgb(154, 154, 154);
 }
 
-.accent{
-    color:rgb(225, 232, 240);
+.accent {
+    color: rgb(225, 232, 240);
 }
-.grey{
-    color:rgb(154, 154, 154);
+
+.grey {
+    color: rgb(154, 154, 154);
 }
-body{
+
+body {
     background: rgb(164, 180, 148);
 }
+
 .footer {
     background: darkgray;
     color: white;
