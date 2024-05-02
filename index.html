@@ -11,10 +11,11 @@
 </head>
 
 <body>
-    <div class="image-container">
-        <img src="Images/Background.png" style="width: 100%;">
+    <div>
+        <img src="Images/Background.png" style="width: 100%; margin-top:0;">
         <div class="overlay">
-            <h1>Join Us Today!</h1>
+            <img src="Images/logo.png" style="width: 30%; float:left;">
+            <h1 id="main">Join Us Today!</h1>
             <button onclick="location.href='constructionCosts.html'">Get A Quote!</button>
         </div>
     </div>
@@ -29,8 +30,9 @@
     </ul>
     <div
         style="padding-top:1px;background-color:#efefef; font-weight: 600; height: 300px; font-size: 500px; align-items:center; z-index: 1; position:relative;">
-        <h2 style="margin-top: 5%; position: relative; z-index: 1;">OUR SERVICES</h2>
-        <hr style="width:50%; background-color:rgb(141, 198, 63); height:2px; margin: 0 auto 20px;">
+        <h2 style="position: relative; z-index: 1; transform: translateY(300%);">OUR SERVICES</h2>
+        <hr
+            style="width:50%; background-color:rgb(141, 198, 63); height:2px; margin: 0 auto 20px; transform: translateY(5500%);">
     </div>
     <div class="service" id="kitchen">
         <h2>Homes & Additions</h2>
@@ -73,78 +75,10 @@
         box-sizing: border-box;
     }
 
-    @media only screen and (max-width: 600px) {
-        .service {
-            max-width: 100%;
-            flex-direction: column;
-        }
-
-        .service img {
-            width: 100%;
-        }
-
-        .service p {
-            font-size: 100%;
-            width: 100%;
-        }
-
-        .overlay h1 {
-            font-size: 2em;
-        }
-
-        .overlay button {
-            font-size: 16px;
-            padding: 10px 15px;
-        }
-
-        body {
-            font-size: 16px;
-        }
-
-        h2 {
-            font-size: 24px;
-        }
-
-        ul li {
-            float: none;
-        }
-    }
-
-    @media only screen and (max-width: 900px) {
-        .service {
-            max-width: 100%;
-            flex-direction: column;
-        }
-
-        .service img {
-            width: 100%;
-        }
-
-        .service p {
-            font-size: 110%;
-            width: 100%;
-        }
-
-        .overlay h1 {
-            font-size: 3em;
-        }
-
-        .overlay button {
-            font-size: 18px;
-            padding: 15px 20px;
-        }
-
-        body {
-            font-size: 18px;
-        }
-
-        h2 {
-            font-size: 28px;
-        }
-
-        ul li {
-            float: none;
-        }
+    #maim {
+        margin-top: 20%;
+        font-weight: 800;
+        text-shadow: 1px 1px 2px black;
     }
 
     h2 {
@@ -203,9 +137,8 @@
 
     .overlay {
         position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 0%;
+        left: 0%;
         text-align: center;
         color: white;
     }
@@ -278,5 +211,31 @@
     .logo {
         background-image: url(Images/logo.png);
         background-size: 100%;
+    }
+
+    @media (max-width:620px) {
+        #main {
+            font-size: 200%;
+            margin-top: 10%;
+            text-shadow: 3px 3px 6px black;
+        }
+
+        .overlay button {
+            padding: 3% 5%;
+            font-size: 70%;
+            margin: 10px 2px;
+        }
+
+        .service {
+            max-width: 80%;
+        }
+
+        .service p {
+            width: 80%;
+        }
+
+        .service img {
+            width: 80%;
+        }
     }
 </style>
