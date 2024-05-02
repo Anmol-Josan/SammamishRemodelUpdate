@@ -69,6 +69,35 @@
             background-image: url(Images/logo.png);
             background-size: 100%;
         }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 -10px;
+        }
+
+        .column {
+            flex: 1; 
+            margin: 0 10px;
+        }
+
+        button {
+    background-color:rgb(159, 190, 129); 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+}
+
+button:hover {
+    background-color: rgb(126, 149, 103); 
+}
     </style>
 </head>
 
@@ -83,43 +112,57 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <div style="position: absolute; z-index: 1;">
-        <div style="display: flex;">
-            <div class="container-left" style="width: 40%; margin: 40px;">
-                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Our experience</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Over the past 14 years our
-                    collective team of excellent hourly employees, exceptional subcontractors, architects, and engineers
-                    have proudly completed hundreds of successful residential remodel and custom build projects.</p>
-                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Who do we work for?</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> We work for a long list of
-                    amazing people, including many executives and professionals in tech and other industries, many of
-                    our friends and neighbors, and many repeat clients.</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> We typically work by
-                    referral only. This simply means most of the projects we engage come through personal relationships
-                    and through existing and past clients referring us to their friends, family, and colleagues.</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> If you are not referred to
-                    us by someone who has worked with us, we kindly ask that you contact at least one of our past
-                    clients to discuss their remodeling experience. We are happy to provide you with some referrals!</p>
+    <div class="container" >
+        <h2 style=" position: relative; z-index: 1; text-align: center;">WANT TO BUILD YOUR DREAM HOME?</h2>
+        <p style="font-size: 16px; font-family: 'SF Pro', 'Helvetica', sans-serif; font-weight: normal; text-align: center;"> Over the past 14 years our
+                collective team of excellent hourly employees, exceptional subcontractors, architects, and engineers
+                have proudly completed hundreds of successful residential remodel and custom build projects.</p>
+        <hr style="width:50%; background-color:rgb(141, 198, 63); height:2px; margin: 0 auto 20px;">
+    </div>
+        <div class="row">
+            <div class="column">
+                <div class="container" style="background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="Images/house2_about.png" alt="Image" style="width: 100%; height: auto;">
+                    <p style="font-size: 30px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Who do we work for?</p>
+                    <p style="font-size: px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> We work for a long list of
+                        amazing people, including many executives and professionals in tech and other industries, many of
+                        our friends and neighbors, and many repeat clients. We typically work by
+                            referral only. This simply means most of the projects we engage come through personal relationships
+                            and through existing and past clients referring us to their friends, family, and colleagues. If you are not referred to
+                            us by someone who has worked with us, we kindly ask that you contact at least one of our past
+                            clients to discuss their remodeling experience. We are happy to provide you with some referrals!</p>
+                    <button style="margin-top: 20px;" onclick="location.href='contact.html'">Contact Us!</button>
+
+    
+                </div>
             </div>
-            <div class="container-right" style="margin: 40px; text-align: right;">
-                <img src="images/Chandelier.png" alt="Chandelier">
+            <div class="column">
+                <div class="container" style="background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="Images/kitched_about.jpg" alt="Image" style="width: 100%;">
+                    <p style="font-size: 30px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> What do we do?</p>
+                    <p style="font-size: px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Our company builds, improves, and beautifies residential living spaces through home design, planning and permitting, remodeling and renovation. We can handle every aspect of any build.
+                        We also build new construction and custom homes from the ground up, including many large and small home additions and ADU's each year. We also handle small jobs and projects, for example, replacing flooring, painting, new roofs, window replacements, new siding, new doors and trim, overall makeovers, etc.
+                    </p>
+                    <button style="margin-top: 20px;" onclick="location.href='constructionCosts.html'">Get A Quote!</button>
+                </div> 
+            </div>
+                
+            <div class="column">
+                <div class="container" style="background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="Images/site_about.jpg" alt="Image" style="width: 100%;">
+                    <p style="font-size: 30px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Where do we work?</p>
+                    <p style="font-size: px; font-family: 'SF Pro', 'Helvetica', sans-serif;">We serve the Greater Seattle Washington East Side areas, including - Sammamish, Redmond, Bellevue, Medina, Mercer Island, Issaquah, Snoqualmie Ridge, Duvall, Carnation, North Bend, and the surrounding areas. In special cases, we have also completed projects as far northwest as Kenmore, Kirkland, and Bothell, and as far southwest as Normandy Park and Arbor Heights. 
+                    </p>
+                                    <button style="margin-top: 20px;" onclick="window.open('https://maps.app.goo.gl/dfySXuMLwGHVdWz98', '_blank')"> Home Office</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div style="display: flex;">
-            <div class="container2-left" style="width: 40%; margin: 40px;">
-                <img src="images/house_about.jpg" alt="House for about page">
-            </div>
-            <div class="container-left" style="width: 40%; margin: 40px;">
-                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> What do we do?</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> Our company builds, improves, and beautifies residential living spaces through home design, planning and permitting, remodeling and renovation. We can handle every aspect of any build.</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> We work for a long list of amazing people, including many executives and professionals in tech and other industries, many of our friends and neighbors, and many repeat clients.</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> We also build new construction and custom homes from the ground up, including many large and small home additions and ADU's each year.</p>
-                <p style="font-size: 20px; font-family: 'SF Pro', 'Helvetica', sans-serif;"> If you are not referred to us by someone who has worked with us, we kindly ask that you contact at least one of our past clients to discuss their remodeling experience. We are happy to provide you with some referrals!</p>
-            </div>
-            <div class="container-right" style="margin: 40px; text-align: right;">
-                <img src="images/Chandelier.png" alt="Chandelier">
-            </div>
-        </div>
+
     </div>
 </body>
 

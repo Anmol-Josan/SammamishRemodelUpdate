@@ -52,6 +52,7 @@
             background-color: rgb(154, 154, 154);
         }
 
+        
         .container {
             padding: 30px;
 
@@ -69,6 +70,55 @@
             background-image: url(Images/logo.png);
             background-size: 100%;
         }
+
+        .container1 {
+            padding: 30px;
+
+        }
+        .container {
+    position: relative;
+    width: 50%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    }  
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(154, 154, 154);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-family: 'SF Pro', 'Helvetica', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
     </style>
 </head>
 
@@ -83,6 +133,51 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
+
+    <div class="container1" >
+        <h2 style=" position: relative; z-index: 1; text-align: center;">New Construction - What Should I Expect To Pay?</h2>
+        <hr style="width:50%; background-color:rgb(141, 198, 63); height:2px; margin: 0 auto 20px;">
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif; text-align: center;"> Costs To Build New Home</p>
+                <img src="Images/constructions costs/House build.png" alt="Structure" class="image">
+                <div class="overlay">
+                    <div class="text"> This will obviously vary greatly depending on many variables, however there is a basic 'range' you can expect to spend that will help you make decisions on whether or not building new is for you, or working with an existing structure is the way to go. There are four basic phases that make up the majority of costs in new construction: Plans, Permitting, Site Work, and  Construction.</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif; text-align: center;"> Plans</p>
+                <img src="Images/constructions costs/Plans.jpg" alt="Plans" class="image">
+                <div class="overlay">
+                    <div class="text">Most architects will charge an hourly rate and give a basic range of how much time they believe it will take them to draw, engineer, and submit for building permits. A typical range you can expect to pay is between $160/hr - $200/hr. Every architect is different, so getting quotes, talking to the person you'll be working with, and finding someone who comes recommended can make the difference between an okay experience and a great one!</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif; text-align: center;"> Permit</p>
+                <img src="Images/constructions costs/permit.jpg" alt="Permit" class="image">
+                <div class="overlay">
+                    <div class="text">Its typically best to have the architect who is drawing the plans also submit for the permits. They will have the most experience and insight with your plans and will work with the city to properly fill out and submit the many documents required for plan review and building permits. Costs for permits will typically end up running between 3% to 4% of the total cost of the project, and could potentially go up from there depending on several factors like cost to bond, environmental studies/reports, arborists costs, surveying costs, etc. </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <p style="font-size: 40px; font-family: 'SF Pro', 'Helvetica', sans-serif; text-align: center;"> Sitework &  Build</p>
+                <img src="Images/constructions costs/Sitework.png" alt="Sitework" class="image">
+                <div class="overlay">
+                    <div class="text">New construction will always have sitework/site prep that will need to be done prior to construction. Sitework can vary drastically depending on what is already done and what still needs to be done. For instance, if you have raw land that is heavily forested then site work will be a greater cost than if the land is already cleared, graded, and ready for a house.
+                     Typical construction with contractor grade finishes can cost somewhere between $430 to $480 per square foot and can go up from there. The more custom the home, details, and features, the more the cost. The challenge with keeping costs to a minimum usually comes down to what the homeowner wants. Keeping within a budget largely depends on homeowner selections and personal priorities.  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>
